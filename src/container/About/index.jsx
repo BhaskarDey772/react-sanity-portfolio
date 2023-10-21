@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { client, urlFor } from "../../client"
 import AppWrapper from "../../wrapper/AppWrapper"
+import MotionWrapper from "../../wrapper/MotionWrapper"
 
 const About = () => {
 
@@ -44,5 +45,5 @@ const About = () => {
   )
 }
 
-const AboutWrapper = AppWrapper(About, 'about')
+const AboutWrapper = AppWrapper(MotionWrapper(About, "app__about"), 'about', 'app__whitebg')
 export default AboutWrapper

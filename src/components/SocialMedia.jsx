@@ -4,10 +4,14 @@ const SocialMedia = () => {
     return (
         <div className='app__social'>
             <div>
-                <BsGithub />
+                <a href='https://github.com/BhaskarDey772' target='_blank' rel='noreferrer'>
+                    <BsGithub />
+                </a>
             </div>
             <div>
-                <BsLinkedin />
+                <a href='https://www.linkedin.com/in/bhaskar-dey-b78175184/' target='_blank' rel='noreferrer'>
+                    <BsLinkedin />
+                </a>
             </div>
             <div>
                 <FaFacebook />

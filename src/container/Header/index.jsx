@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 
 import { images } from "../../constants"
 import AppWrapper from "../../wrapper/AppWrapper"
+import MotionWrapper from "../../wrapper/MotionWrapper"
 
 const scaleVarients = {
   whileInView: {
@@ -70,5 +71,5 @@ const Header = () => {
   )
 }
 
-const HeaderWrapper = AppWrapper(Header, 'home')
+const HeaderWrapper = AppWrapper(MotionWrapper(Header, 'app__header'), 'home')
 export default HeaderWrapper

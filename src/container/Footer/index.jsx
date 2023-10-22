@@ -80,6 +80,6 @@ const Footer = () => {
   );
 };
 
-const FooterWrapper = AppWrap(MotionWrap(Footer, 'app__footer'), 'contact', 'app__whitebg');
+const FooterWrapper = AppWrap(MotionWrap(Footer, 'app__footer'), 'contact');
 
 export default FooterWrapper;

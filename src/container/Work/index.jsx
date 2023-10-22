@@ -37,10 +37,13 @@ const Work = () => {
   }
 
   const allUniqueTags = () => {
-    const tags = works.map(item => item.tags)
+    const tags = works.map(item => item.tags !== undefined ? item.tags : []).flatMap(item => item).filter(item => {
+      if (item !== undefined || item !== "") return item
+    })
     const uniqueTags = Array.from(new Set([].concat(...tags, 'All')))
     return uniqueTags
   }
+  console.log(allUniqueTags())
 
   return (
     <>
